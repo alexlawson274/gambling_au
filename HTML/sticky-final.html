@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Scrollama: Sticky Overlay Example</title>
+    <meta name="description" content="Scrollama: Sticky Overlay Example" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #scrolly {
+        position: relative;
+        background-color: #ffffff;
+        padding: 1rem;
+      }
+
+      body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #000000;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+      article {
+        position: relative;
+        padding: 0;
+        max-width: 20rem;
+        margin: 0 auto;
+      }
+
+      .sticky-thing {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        background-color: #fdfbfb;
+        background-image: url(images/Testing.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        
+
+        z-index: 0;
+        top: 0.5vh;
+        height: 100vh;
+        /* Center everything inside */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-image 0.8s ease-in-out;
+      }
+
+      .sticky-thing p {
+        font-size: 3rem;
+        font-weight: 800;
+        color: #0c0c0c;
+        margin-left: 210px;
+        margin-right: 210px;
+        text-align: center;
+      }
+
+      .step {
+        margin: 0 auto 2rem auto;
+        margin-bottom: 20rem;
+        color: #080808;
+      }
+
+      .step:last-child {
+        margin-bottom: 0;
+      }
+
+      .step.is-active p {
+        color: #3b3b3b;
+      }
+
+      .step p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.2rem;
+        background-color:rgba(236, 234, 234, 0.95);
+        border-color: #0c0c0c;
+       }
+
+     .header {
+      font-family: 'Times New Roman', serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            line-height: .5;
+            color: #0f0f0f;
+            margin-left: 100px ;
+          margin-right: 100px; }
+        
+     .article-title {  
+            font-family: 'Times New Roman', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 2px;
+            margin-left: 80px;
+            margin-right: 80px;
+          }
+    .sub-title {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            margin-left:80px;
+            margin-right:80px;
+            color: #444444;
+        }
+      .opening-line {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #0c0c0c;
+        text-align: center;
+        margin-top: 250px;
+        margin-bottom: 40px; }
+
+      .underline-red {
+        background-color: #ff00004d; /* Light red with transparency */
+        padding: 0.1em 0.2em; /* Adds spacing around text */
+        border-radius: 3px; /* Optional: softens edges */
+      }
+
+      .svg-container {
+        display: flex;
+        justify-content: center; /* Horizontal center */
+        align-items: center;     /* Vertical center */
+        height: 60vh;   
+        margin-bottom: 120px;       /* Full viewport height */
+        }
+
+        .centered-svg {
+        height: auto;           /* Set your desired width */
+        width: 550px;               /* Maintain aspect ratio */
+        }
+    
+        .caption {
+            font-size: 0.85rem;
+            color: #666;
+            line-height: 1;
+            margin-left: 90px;
+        }
+        .article-meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin:110px
+        }
+        
+        .article-content {
+            font-size: 1.2rem;
+            line-height: 1.7;
+        }
+        .article-content p {
+            margin-bottom: 1.rem;
+            margin:110px 
+        }
+        .outro {
+            height: 200px;}
+        .graph-header {
+          font-family: 'Times New Roman', serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            line-height: .5;
+            color: #0f0f0f;
+            margin-bottom: 20px;}
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+
+      <section id="scrolly">
+        <div class="opening-line">
+          <p>Every year Australians spend <b><u>$21 billion dollars</u></b> on gambling </p>
+        </div>
+        <div class="sticky-thing">
+          <p></p>
+        </div>
+
+        <article>
+          <div class="step" data-step="" >
+            <p>Per capita, that is more money spent on gambling than any other country</p>
+          </div>
+          <div class="step" data-step=""> 
+            <p>But the problem in Australia is not with all gamblers...</p>
+          </div>
+          <div class="step" data-step=""data-background-image="url(images/testing1.svg)">
+            <p>...because the vast majority of the gambling is done by <b><span class="underline-red">"high risk gamblers"</span></b></p>
+          </div>
+          <div class="step" data-step=""> 
+            <p>who make up just 5% of all gamblers.</p>
+          </div>
+            <section class="outro"></section>
+          </div>
+        </article>
+      </section>
+      
+      <div class="header">
+        <h1 class="article-title">Australia's Problem With Problem Gamblers </h1>
+        <h2 class="sub-title">Australia is the largest per-capita gamblers in the world, but policy to deal with the problem is not targeting the root cause</h2></div>
+      <div style="text-align: center;">
+        <hr>
+          <img src="images/gambling_au.jpg" alt="Gambling SVG"  style="max-width: 700px; width: 100%; height: auto;">
+        </div>
+        <p class="caption">Image: Gambling SVG By Alexander Lawson</p>  </div>
+      <div class="article-content">     
+          <p>Australian's love to gamble. At the slot machine, trackside, or the casino table, Australians love to gamble.  Australians spend so much on gambling it is now the highest per capita gambling than any other country on earth. Australians may love a punt, but gambling has a toll on the community [research]. This is why calls to ban advertising and set up loss limits pokie machines. However, any debate about reducing the effects of gambling needs to consider an important fact: spending on gambling is highly concentrated in a small minority. Unless solutions target this cohort of heavy gamblers-- they are likely to be ineffective. In fact, gambling as an activity appears to be falling, Despite the barrage of sports advertising we see, fewer Australians are gambling. But it's the heavy betters that are holding up the industry. </p>
+          <div class="svg-container"> <iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-hrfkw" src="https://datawrapper.dwcdn.net/hrfkw/1/" scrolling="no" frameborder="0" style="border: none;" width="370" height="387" data-external="1"></iframe> </div>   
+          <div class="svg-container"> <iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-bQybX" src="https://datawrapper.dwcdn.net/bQybX/1/" scrolling="no" frameborder="0" style="border: none;" width="406" height="474" data-external="1"></iframe></div>
+            
+            </main>
+
+    <!-- <div class='debug'></div> -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script>
+      // using d3 for convenience
+      var main = document.querySelector("main");
+      var scrolly = main.querySelector("#scrolly");
+      var sticky = scrolly.querySelector(".sticky-thing");
+      var article = scrolly.querySelector("article");
+      var steps = article.querySelectorAll(".step");
+
+      // initialize the scrollama
+      var scroller = scrollama();
+
+      // scrollama event handlers
+      function handleStepEnter(response) {
+  var el = response.element;
+
+  steps.forEach(step => step.classList.remove('is-active'));
+  el.classList.add('is-active');
+
+  // Update text and background image
+  sticky.querySelector("p").innerText = el.dataset.step;
+  
+  // Get the background image from data attribute
+  const bgImage = el.dataset.backgroundImage;
+  if (bgImage) {
+    sticky.style.backgroundImage = bgImage;
+  }
+}
+      function init() {
+        // 2. setup the scroller passing options
+        // 		this will also initialize trigger observations
+        // 3. bind scrollama event handlers (this can be chained like below)
+        scroller
+          .setup({
+            step: "#scrolly article .step",
+            offset: 0.33,
+            debug: false
+          })
+          .onStepEnter(handleStepEnter);
+
+        // setup resize event
+        window.addEventListener("resize", scroller.resize);
+      }
+
+      // kick things off
+      init();
+    </script>
+  </body>
+</html>
