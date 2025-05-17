@@ -1,19 +1,18 @@
 # Gambling in Australia: Australia's Problem with Problem Gamblers
-This repo contains the HTML and JS Scrollarama code for a data journalism project. 
+This repo contains the HTML and scrollama.js code for a data journalism project. 
 
 ##  Methodology
-Australia has the highest rate of gambling anywhere in the world. 
+Australia has the highest rate of gambling anywhere in the world. This project is designed to investigate the root cause of the problem and communicate findings to readers.
 
 ##  Source Data 
-The research for the article is based on a report by the AFSA Super and the Australian Economy Report, available here: https://www.superannuation.asn.au/wp-content/uploads/2025/02/ASFA-research-paper-Super-and-the-economy.pdf
-
-The source data used comes from OECD Pensions at a glance report, available here: https://www.oecd.org/en/publications/2023/12/pensions-at-a-glance-2023_4757bf20.html
-
-Data for gross savings (% of GDP) comes from the  World Bank National Accounts data, available here: https://data.worldbank.org/indicator/NY.GNS.ICTR.ZS
+The research for the article comes from the NSW Gambling Survey 2024, available here: (https://www.gambleaware.nsw.gov.au/-/media/nsw-gambling-survey-2024-report.ashx?rev=94d18ccb266b434e9c8f9e391ea1cf1b)
 
 ## Dependencies
-The Scrollarama library
+The scrollama.js library used in this article comes from Jonathan Soma, you can access the original JS file here: https://github.com/jsoma/simplified-scrollama-scrollytelling/
+
+Jonathan has an excellent tutorial on YouTube explaining how to use the code: https://www.youtube.com/watch?v=d7wTA9F-l8c
 
 ##  Output
-The calculations were used as part of a data journalism project. Click here to see the final article: https://alexlawson274.github.io/
-<iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-hrfkw" src="https://datawrapper.dwcdn.net/hrfkw/1/" scrolling="no" frameborder="0" style="border: none;" width="370" height="387" data-external="1"></iframe>
+Click here to see the final article: https://alexlawson274.github.io/
+![high_risk_gambling1](https://github.com/user-attachments/assets/52f923c5-6e9a-42c0-b480-b7bee3dd689a)
+
