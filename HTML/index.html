@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Scrollama: Sticky Overlay Example</title>
+    <title>Scrollama</title>
     <meta name="description" content="Scrollama: Sticky Overlay Example" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
@@ -44,8 +44,7 @@
 
         z-index: 0;
         top: 0.5vh;
-        height: 100vh;
-        /* Center everything inside */
+        height: 80vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -117,25 +116,25 @@
         color: #0c0c0c;
         text-align: center;
         margin-top: 250px;
-        margin-bottom: 40px; }
+        margin-bottom: 110px; }
 
       .underline-red {
-        background-color: #ff00004d; /* Light red with transparency */
-        padding: 0.1em 0.2em; /* Adds spacing around text */
-        border-radius: 3px; /* Optional: softens edges */
+        background-color: #ff00004d; 
+        padding: 0.1em 0.2em; 
+        border-radius: 3px; 
       }
 
       .svg-container {
         display: flex;
-        justify-content: center; /* Horizontal center */
-        align-items: center;     /* Vertical center */
+        justify-content: center; 
+        align-items: center;     
         height: 60vh;   
-        margin-bottom: 120px;       /* Full viewport height */
+        margin-bottom: 120px;       
         }
 
         .centered-svg {
-        height: auto;           /* Set your desired width */
-        width: 550px;               /* Maintain aspect ratio */
+        height: auto;           
+        width: 550px;               
         }
     
         .caption {
@@ -176,7 +175,7 @@
 
       <section id="scrolly">
         <div class="opening-line">
-          <p>Every year Australians spend <b><u>$21 billion dollars</u></b> on gambling </p>
+          <p>Every year Australians spend <b>21 billion dollars</b> on gambling </p>
         </div>
         <div class="sticky-thing">
           <p></p>
@@ -209,17 +208,19 @@
         </div>
         <p class="caption">Image: Gambling SVG By Alexander Lawson</p>  </div>
       <div class="article-content">     
-          <p>Australian's love to gamble. At the slot machine, trackside, or the casino table, Australians love to gamble.  Australians spend so much on gambling it is now the highest per capita gambling than any other country on earth. Australians may love a punt, but gambling has a toll on the community [research]. This is why calls to ban advertising and set up loss limits pokie machines. However, any debate about reducing the effects of gambling needs to consider an important fact: spending on gambling is highly concentrated in a small minority. Unless solutions target this cohort of heavy gamblers-- they are likely to be ineffective. In fact, gambling as an activity appears to be falling, Despite the barrage of sports advertising we see, fewer Australians are gambling. But it's the heavy betters that are holding up the industry. </p>
+          <p>Australians love to gamble. Every year, Australians spend $21 billion placing bets in the hope of winning more. On slot machines (pokies), casino tables, lotteries, and increasingly on sports, Australians gamble more than anyone else in the world. But all this punting will take a toll. According to the World Health Organisation, high amounts of gambling can lead to financial and relationship stress, domestic violence, and in extreme cases, suicide. With gambling revenues at all-time highs, it is policymakers who are looking for ways to reduce the damage. There have been calls to ban gambling advertising during sports and introduce voluntary loss limits on pokie machines. However, these measures are unlikely to succeed in reducing gambling harm unless they target the root cause of the problem: high-risk gamblers.
+            These heavy bettors make up just 5% of all gamblers but account for 77% of all money wagered. Even as overall gambling participation declines, these heavy bettors sustain the industry’s revenues.
+             </p>
           <div class="svg-container"> <iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-hrfkw" src="https://datawrapper.dwcdn.net/hrfkw/1/" scrolling="no" frameborder="0" style="border: none;" width="370" height="387" data-external="1"></iframe> </div>   
           <div class="svg-container"> <iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-bQybX" src="https://datawrapper.dwcdn.net/bQybX/1/" scrolling="no" frameborder="0" style="border: none;" width="406" height="474" data-external="1"></iframe></div>
-            
+          <p>High-risk gamblers bet a lot, and frequently. Whereas a low volume better will gamble an average, of $300, according to a NSW report, a high-risk gambler will bet 43 times that amount (around $13,000), in most cases gambling weekly. The proposals to limit efforts to reduce advertising or access to pokies are likely to be ineffective…
+          </p>
+          <p> To read the full article, please contact alexlawson274@gmail.com</p>
             </main>
 
-    <!-- <div class='debug'></div> -->
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
     <script>
-      // using d3 for convenience
       var main = document.querySelector("main");
       var scrolly = main.querySelector("#scrolly");
       var sticky = scrolly.querySelector(".sticky-thing");
@@ -246,9 +247,7 @@
   }
 }
       function init() {
-        // 2. setup the scroller passing options
-        // 		this will also initialize trigger observations
-        // 3. bind scrollama event handlers (this can be chained like below)
+       
         scroller
           .setup({
             step: "#scrolly article .step",
